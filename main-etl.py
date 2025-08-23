@@ -19,3 +19,6 @@ for state in range(1,33):
     response = requests.get(url) # request api
     data = response.json() # json data 
     fulldata.extend(data)  # add data on arr 
+
+df = pd.DataFrame(fulldata)
+print(df)
